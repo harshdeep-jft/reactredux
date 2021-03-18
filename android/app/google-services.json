@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "758363728915",
+    "project_id": "reduxnative",
+    "storage_bucket": "reduxnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758363728915:android:957257cf32fec0693c63e6",
+        "android_client_info": {
+          "package_name": "com.reduxnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758363728915-fq7o5u2u4e0mls1ghefuvjfhgmv0rucq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reduxnative",
+            "certificate_hash": "509a027f61f48041f48edc25d03e1b69f8a064a0"
+          }
+        },
+        {
+          "client_id": "758363728915-h7tgqtuoin0fekvnumhfodr0fi3krcfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVHOE42DqUSZ1bAWVXAp8He5QeU9OzJ5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758363728915-h7tgqtuoin0fekvnumhfodr0fi3krcfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
