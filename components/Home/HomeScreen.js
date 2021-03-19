@@ -1,18 +1,21 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, } from 'react-native';
 import { connect } from 'react-redux';
+import { Layout, Button, Text, Divider, TopNavigation } from '@ui-kitten/components'
 //🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
 function HomeScreen({ navigation, ...props }) {
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'orange' }}>
-            <Text>Home Screen {props.name ? 'true' : 'false'}</Text>
-            <Button title='Next Screen' onPress={() => {
-                console.log('----->', navigation);
-                navigation.navigate('Information')
-            }
-            } />
-        </View>
+        <SafeAreaView style={{ flex: 1 }}>
+            <TopNavigation title='Dashboard' alignment='center' />
+            <Divider />
+            <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Text>Home Screen: {props.name}</Text>
+                <Button onPress={() => {
+                    navigation.navigate('Information')
+                }}>Information Screen</Button>
+            </Layout>
+        </SafeAreaView>
     );
 }
 

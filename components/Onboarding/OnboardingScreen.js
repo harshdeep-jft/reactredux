@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Dimensions, SafeAreaView, ScrollView, StyleSheet, View, Text, Image, PixelRatio, TouchableOpacity } from 'react-native';
+import { Dimensions, SafeAreaView, ScrollView, StatusBar, StyleSheet, View, Text, Image, PixelRatio, TouchableOpacity } from 'react-native';
 
 const OnboardingScreen = ({ navigation }) => {
 
@@ -86,12 +86,12 @@ const OnboardingScreen = ({ navigation }) => {
                             alignItems: 'center',
                             alignSelf: 'center',
                             position: 'absolute',
-                            bottom: 10,
+                            bottom: StatusBar.currentHeight * 1.5,
                             borderRadius: 30,
                             width: 60,
                             height: 60,
                             backgroundColor: 'black'
-                        }} onPress={() => navigation.navigate('Home')}>
+                        }} onPress={() => navigation.navigate('LoginScreen')}>
                             <Text style={{ fontSize: 30 }}>🚀</Text>
                         </TouchableOpacity>
                     </View>
